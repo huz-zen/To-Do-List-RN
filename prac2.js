@@ -3,7 +3,9 @@ import { useState } from 'react';
 import { Button, StyleSheet, Text, TextInput, View ,ScrollView,FlatList,TouchableOpacity} from 'react-native';
 
 export default function App() {
-  const input = [{name: 'shaun',id:'0'},
+  const input = 
+    [
+    {name: 'shaun',id:'0'},
     {name: 'shaun',id:'1'},
     {name: 'shaun',id:'2'},
     {name: 'shaun',id:'3'},
@@ -12,7 +14,8 @@ export default function App() {
     {name: 'shaun',id:'7'},
     {name: 'shaun',id:'8'},
     {name: 'shaun',id:'9'},
-    {name: 'shaun',id:'10'}];
+    {name: 'shaun',id:'10'}
+  ];
   const [people,setpeople] = useState(input);
 
   const pressHandler= (id)=>{
